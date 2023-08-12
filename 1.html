@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="bg-img"></div>
+    <div class="content">
+      <form>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email"/>
+          <input type="password" id="password" name="password" placeholder="Password"/>
+        </div>
+        <button type="button" onclick="signIn()">Netflix</button>
+      </form>
+      <p class="neon-text">hesabınız yok mu? <a href="kayit ol.html">şimdi kayit ol</a></p>
+      <img src="https://gazete.firat.edu.tr/wp-content/uploads/2021/03/netflix.png" width="100" align="center"/>
+      <p class="footer">2023 Tüm Hakları Saklıdır</p>
+    </div>
+  </div>
+  <style>
+    /* Your existing CSS styles here */
+    .neon-text {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #E50813, 0 0 40px #E50813, 0 0 50px #E50813, 0 0 60px #E50813, 0 0 70px #E50813;
+    }
+    .footer {
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function signIn() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      
+      // Replace with your validation logic
+      if (email === "gokhanyakut@gmail.com" && password === "123456") {
+        window.location.href = "gokhanyakut.html"; // Redirect after successful login
+      } else {
+        alert("Geçersiz e-posta veya şifre. Lütfen tekrar deneyin");
+      }
+    }
+  </script>
+</body>
+</html>
